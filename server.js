@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
   if (host && host.includes('aloha')) {
-    res.end('ALOHA');
+    res.end('ALOHA_GREETING');
   }
   else {
     res.end('HELLO_WORLD');
